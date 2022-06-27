@@ -1,0 +1,22 @@
+{
+  "name": "ioxo",
+  "version": "1.0.0",
+  "description": "design and web concept",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html --open --port 3000",
+    "build": "parcel build index.html"
+  },
+  "keywords": [
+    "design",
+    "web",
+    "development"
+  ],
+  "author": "Dmitrii Zavgorodnii",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^5.1.12",
+    "postcss": "^8.4.14"
+  }
+}
