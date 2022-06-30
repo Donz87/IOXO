@@ -2,7 +2,6 @@
   "name": "ioxo",
   "version": "1.0.0",
   "description": "design and web concept",
-
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel index.html --open --port 3000",
