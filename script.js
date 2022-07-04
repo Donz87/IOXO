@@ -3,7 +3,7 @@ import year from "./actions/footer.js";
 import scrollBanner from "./actions/scroll.js";
 import logo from "./actions/logo.js";
 import sideBar from "./actions/sideBar.js";
-import Button from "./actions/button.js"
+
 
 
 
@@ -12,7 +12,6 @@ import Button from "./actions/button.js"
   scrollBanner();
   logo();
   sideBar();
-  Button();
   window.addEventListener('scroll', () => {
     headerBG();
 
