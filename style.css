@@ -280,7 +280,7 @@ nav a {
     .hamburger {
         display: block;
         justify-self: end;
-        margin-right: 10px;
+        margin-right: 20px;
     }
 
     header nav {
@@ -528,6 +528,9 @@ footer ul {
     .social--items svg {
         width: max(20px, 1vw);
         height: auto;
+    }
+    .blocks {
+        grid-gap:max(20px, 5vw);
     }
 
     .b-one {
