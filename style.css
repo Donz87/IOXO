@@ -403,7 +403,7 @@ nav a {
     width: 90%;
     display: grid;
     grid-template-rows: 1fr auto;
-    padding: 10% 5%;
+    padding:5% 5%;
     position:relative
 
 }
