@@ -420,6 +420,9 @@ nav a {
 .side-bar--social .social--items {
     margin:30px 0;
 }
+.hamburger {
+    display: none;
+}
 .hamburger .line {
     width: max(30px, 2vw);
     height: max(2px, .1vh);
@@ -429,6 +432,7 @@ nav a {
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    
 }
 
 .hamburger:hover {
@@ -451,6 +455,20 @@ nav a {
     -ms-transform: translateY(min(-10px, -.7vw)) rotate(-45deg);
     -o-transform: translateY(min(-10px, -.7vw)) rotate(-45deg);
     transform: translateY(min(-10px, -.7vw)) rotate(-45deg);
+}
+
+@media screen and (max-width: 720px) {
+    .hamburger {
+        display: block;
+        justify-self: end;
+        margin-right: 10px;
+    }
+    header nav {
+        display: none;
+    }
+    .header--wrapper {
+        grid-template-columns: max(60px, 10vw) 1fr;
+    }
 }
 
 /* SECTION BANNER */
