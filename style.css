@@ -65,18 +65,7 @@ h3 {
     display: block;
 }
 
-/* .btn {
-    border-color: var(--color-primary);
-    color: var(--color-primary);
-    -webkit-transition: all 150ms ease-in-out;
-    transition: all 150ms ease-in-out;
-    font-weight: 300;
-}
-
-.btn:hover {
-    box-shadow: 0 0 10px 0 rgba(58, 45, 153, .3) inset, 0 0 10px 4px rgba(58, 45, 153, .3);
-    font-weight: 500;
-} */
+ 
 
 .btn-one {
     color: #FFF;
@@ -337,7 +326,7 @@ header a {
 .logo {
     display: grid;
     align-items: center;
-    grid-gap: max(4px, .4vw);
+    grid-gap: max(2px, .2vw);
 }
 
 .i {
@@ -378,7 +367,7 @@ header a {
     fill: var(--color-primary);
     /* width: max(30px, 6vw); */
     width: auto;
-    height: max(10px, 2.5vh);
+    height: max(8px, 2vh);
 }
 
 nav a {
@@ -403,7 +392,7 @@ nav a {
     width: 90%;
     display: grid;
     grid-template-rows: 1fr auto;
-    padding:5% 5%;
+    padding:10% 5%;
     position:relative
 
 }
