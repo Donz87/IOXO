@@ -2,7 +2,7 @@ import iconClose from "./iconClose.js";
 
 const modal = () => {
     const wrapper = document.querySelector('.modal--wrapper');
-    const btn = document.querySelector('.btn--modal');
+    const btn = document.querySelectorAll('.btn--modal');
     const close = document.querySelector('.modal--close');
     const popUp = document.querySelector('.modal');  
 
@@ -23,12 +23,15 @@ const modal = () => {
         wrapper.style.background = '';
         popUp.style.opacity ='0';
     }
-
-    btn.addEventListener('click', () => {
+    for (let i =0; i < btn.length; i++) {
+     btn[i].addEventListener('click', () => {
+        window.scrollTo(0, 0);
         darkBg();
         noScroll();
         iconClose();
+       
     });
+}
 
     close.addEventListener('click', () => {
         closeModal();

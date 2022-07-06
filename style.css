@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
 html {
     overflow-x: hidden;
@@ -16,7 +16,6 @@ html {
 }
 
 body {
-    /* background: linear-gradient(rgba(0, 9, 7) 0%, rgba(5, 12, 18) 100%); */
     background: var(--color);
     color: var(--color-primary);
     font-weight: 300;
@@ -64,6 +63,8 @@ h3 {
     cursor: pointer;
     user-select: none;
     display: block;
+    width: max(150px, 30%);
+    margin: max(25px, 2vh) auto;
 }
 
 .btn-four {
@@ -348,7 +349,7 @@ nav a {
 }
 
 .section--banner .button {
-    width: 50%;
+    /* width: 50%; */
     margin: max(25px, 2vh) auto;
 }
 
@@ -596,6 +597,11 @@ footer {
     text-align: center;
     padding: max(25px, 2vh) 0;
 }
+.footer-title--wrapper {
+    text-align: center;
+    width: max(400px, 50%);
+    margin: max(30px, 2vh) auto 0 auto;
+}
 
 .footer--content {
     width: 80%;
@@ -646,18 +652,25 @@ footer ul {
     .footer--wrapper {
         background-size: cover;
     }
-
+    .footer-title--wrapper {
+        width: 100%;
+    }
     footer .logo svg {
         width: max(30px, 3vw);
         height: max(30px, 3vh);
     }
 
     .social--items svg {
+        width: max(40px, 1vw);
+        height: auto;
+    }
+   footer .social--items svg {
         width: max(20px, 1vw);
         height: auto;
     }
     .blocks {
         grid-gap:max(20px, 5vw);
+        height: 100vh;
     }
     .block--content {
         opacity: 0;
