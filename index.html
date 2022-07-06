@@ -7,6 +7,7 @@
     <link rel="icon" href="favicon.svg" />
     <title>IOXO</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
  
     
 </head>
@@ -20,10 +21,10 @@
                     <span class="o-down"></span>
                     <span class="x"></span>
              </div>
-            <nav>
-                <a href="">Test</a>
-                <a href="">Test</a>
-                <a href="">Test</a>
+            <nav class="hor-nav">
+                <a href="">Home</a>
+                <a href="">Services</a>
+                <a href="">About</a>
             </nav>
            
                 <div class="hamburger" id="hamburger-1">
@@ -37,10 +38,10 @@
    <div class="side-bar">
         <div class="side-bar--wrapper">
             <div class="side-bar--line"></div>
-            <nav>
-                <a href="">Test</a>
-                <a href="">Test</a>
-                <a href="">Test</a>
+            <nav class="side-bar--nav">
+                <a href="">Home</a>
+                <a href="">Services</a>
+                <a href="">About</a>
             </nav>
             <div class="side-bar--social">
                 <div class="social--items">
@@ -156,15 +157,20 @@
    </div>
   <main>
         <section class="section section--banner">
-            <div class="section--wrapper">
+            <div class="section--wrapper banner--wrapper">
                 <div class="section--content">
-                <h2> Leadint the evolution in</h2>
-                <h1>Ultralight Cycling</h1>
+                <h2> 
+                    Turn your ideas into reality with IOXO
+                 </h2>
+                <h1>
+                    RESULTS DRIVEN
+                    DEVELOPING BUSINESS CONCEPTS
+                </h1>
                            
      
-                <a href="!" class="button btn-four ">Button
+                <div class="button btn-four btn--modal ">Get Started
                     <span></span><span></span><span></span><span></span>
-                </a>
+                </div>
              
 
                 <a href="#second" class="btn_scroll bt_arrow " >   
@@ -178,18 +184,30 @@
         </section>
         <section class="section section--second" id="second">
             <div class="section--wrapper second--wrapper">
+                <div class="section--content">
+                    <h1>
+                        Let's make an extraordinary project together
+                    </h1>
+                    <h2>
+                        Ambitious plans to conquer the world? Well, why not? Let's start, we are sure you can succeed!
+                    </h2>
+                </div>
                 <div class="blocks">
                     <div class="block b-one">
                        <div class="block--content">
                          <div class="bg-block">
-                            <h4>ENGINE OPTIMIZATION – SEO</h4>
+                            <h4>
+                                PROTOTYPE CREATION AND BLUEPRINTING
+                            </h4>
                             <span></span><span></span><span></span><span></span><span></span>
                          </div>
                         </div>  
                     </div>
                     <div class="block b-second">                        
                             <div class="block--content"><div class="bg-block">
-                                 <h4>WEBSITE DESIGN & DEVELOPMENT</h4>
+                                 <h4>
+                                    MARKETING SCORECARD
+                                 </h4>
                                  <span></span><span></span><span></span><span></span><span></span> 
                             </div>                           
                      </div>
@@ -197,7 +215,9 @@
                     <div class="block b-third">                   
                             <div class="block--content"> 
                                 <div class="bg-block">
-                                 <h4> SOCIAL MEDIA MARKETING</h4>
+                                 <h4>
+                                    DESIGN AND STORYTELLING
+                                 </h4>
                                  <span></span><span></span><span></span><span></span><span></span> 
                                 </div>
                             </div>
@@ -205,7 +225,9 @@
                     <div class="block  b-fourth">                      
                             <div class="block--content">
                                 <div class="bg-block">
-                                     <h4>CONTENT WRITING</h4> 
+                                     <h4>
+                                        CONTENT WRITING
+                                     </h4> 
                                      <span></span><span></span><span></span><span></span><span></span>                              
                                 </div>
                             </div>
@@ -213,7 +235,9 @@
                     <div class="block b-fifth">                     
                             <div class="block--content">
                                 <div class="bg-block">
-                                     <h4>REPUTATION MANAGEMENT</h4>
+                                     <h4>
+                                        REPUTATION MANAGEMENT
+                                     </h4>
                                      <span></span><span></span><span></span><span></span><span></span>
                                  </div>
                             </div>
@@ -223,7 +247,7 @@
                 <div id="particles-js"></div> <!-- stats - count particles -->
               
             </div>
-        </section>
+        </section>       
   </main>
   <footer>
     <div class="footer--wrapper">
@@ -259,7 +283,7 @@
                 </div>
                 <div class="social--items">
                     <a href="#!" class="social--item">
-                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="465.000000pt" height="500.000000pt" viewBox="0 0 465.000000 500.000000" preserveAspectRatio="xMidYMid meet">
+                        <svg  version="1.0" xmlns="http://www.w3.org/2000/svg" width="465.000000pt" height="500.000000pt" viewBox="0 0 465.000000 500.000000" preserveAspectRatio="xMidYMid meet">
                             <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)"
                             fill="#fafafa" stroke="none">
                             <path d="M2245 4944 c-597 -322 -2137 -1172 -2155 -1190 l-25 -24 0 -1225 0
@@ -372,7 +396,22 @@
     </div>
   </footer>
    
-   
+   <div class="modal--wrapper">
+    <div class="modal">
+        <div class="modal--close"></div>
+        <h2 class="modal--header">Tell us your idea</h2>
+        <form action="">
+            <input id="subject" type="text" name="subject">
+            <input id="name" type="text" name="name">
+            <input id="email" type="email" name="email">
+            <input id="phone" type="tel" name="phone">
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <button class="button btn-four" type="submit">Get Started
+                <span></span><span></span><span></span><span></span>
+            </button>
+        </form>
+    </div>
+   </div>
 
     <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
