@@ -6,7 +6,8 @@ import sideBar from "./actions/sideBar.js";
 import hexagon from "./actions/hexagon.js";
 import particles from "./actions/particles.js";
 import animSocIcon from "./actions/anim-soc-icon.js";
-import modal from "./actions/modal.js"
+import modal from "./actions/modal.js";
+import forms from "./actions/send.js";
 
 
 
@@ -20,6 +21,7 @@ import modal from "./actions/modal.js"
   particles();
   animSocIcon();
   modal();
+  forms();
   
   window.addEventListener('scroll', () => {
     hexagon();

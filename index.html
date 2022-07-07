@@ -411,12 +411,24 @@
     <div class="modal">
         <div class="modal--close"></div>
         <h2 class="modal--header">Tell us your idea</h2>
-        <form action="">
-            <input id="subject" type="text" name="subject">
-            <input id="name" type="text" name="name">
-            <input id="email" type="email" name="email">
-            <input id="phone" type="tel" name="phone">
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <form>
+            <div class="input--wrapper">
+                <input id="subject" type="text" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="input--wrapper">
+                <input id="name" type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="input--contact">
+                <div>
+                <input id="email" type="email" name="email" placeholder="E-mail" required>
+                </div>
+                <div>
+                <input id="phone" type="tel" name="phone" placeholder="Phone number" required>
+            </div>
+            </div>
+            <div class="input--wrapper">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Description"></textarea>
+             </div>
             <button class="button btn-four" type="submit">Send
                 <span></span><span></span><span></span><span></span>
             </button>

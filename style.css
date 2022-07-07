@@ -92,6 +92,9 @@ h3 {
     transition-delay: calc((var(--n) - 1) * 0.1s);
     z-index: -1;
 }
+form .button span {
+    background-color: var(--green);
+}
 
 .btn-four:hover span {
     transform: translateY(0) scale(2);
@@ -670,7 +673,8 @@ footer ul {
     }
     .blocks {
         grid-gap:max(20px, 5vw);
-        height: 100vh;
+        height: auto;
+        transform: translateY(80px);
     }
     .block--content {
         opacity: 0;
@@ -766,8 +770,8 @@ footer ul {
 
 }
  .modal {
-    height: 80vh;
-    width:30vw;
+    height: auto;
+    width:50vw;
     background-color:var(--color-secondary);
     position: relative;
     opacity: 0;
@@ -789,33 +793,84 @@ footer ul {
     cursor: pointer;
  }
  .modal--close svg:hover {
-    fill: var(--color-primary);
+    fill: var(--green);
  }
  
  form {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-gap:10px;
-    font-size: max(20px, 1.1vmax);
+
+    font-size: max(20px, 1vmax);
     width: 90%;
     margin: max(30px, 1vh) auto;
+ }
+ input,
+ textarea {
+    padding-left:5px;
+    width: calc(100% - 5px);
+    border: none;
+    margin-bottom: max(30px, .3vh);
+    font-size: max(20px, 1vmax);
+    outline-color: var(--green);
  }
  input[type=text],
  input[type=email],
  input[type=tel] {
-    height: max(40px, 1vh);
+    height: max(40px, 4vh);
  }
- input[type=text] {
+
+ .input--contact {
+   width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap:max(5px, .2vw);
+ }
+ .input--wrapper {
+    width:100%;
+    margin: auto;
+ }
+
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.4s ease-in-out; font-size:max(18px, .8vmax)}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.4s ease-in-out; font-size:max(18px, .8vmax)}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.4s ease-in-out; font-size:max(18px, .8vmax)}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.4s ease-in-out; font-size:max(18px, .8vmax)}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+
+    }
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder  {
+    opacity: 0; 
+    transition: opacity 0.4s ease-in-out;
+}
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
+    opacity: 0; 
+    transition: opacity 0.4s ease-in-out;
+}
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
+    opacity: 0; 
+    transition: opacity 0.4s ease-in-out;
+}
+
+.status {
     width: 100%;
- }
- input[type=email],
- input[type=tel] {
-    width:40%;
- }
- textarea {
-    width: 100%;
- }
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: var(--color-secondary);
+    z-index: 100;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    line-height: 2;
+}
+
  @media screen and (max-width:720px) {
     .modal {
         height: 80vh;
@@ -825,5 +880,8 @@ footer ul {
      input[type=email],
      input[type=tel] {
         width: 100%;
+     }
+     .input--contact {
+        grid-template-columns: 1fr;
      }
  }
