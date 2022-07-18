@@ -7,13 +7,11 @@ const hexagon = () => {
     const four = document.querySelector('.b-fourth');
     const five = document.querySelector('.b-fifth');
 
-    // for (let i = 0; i < block.length; i++) {
-    //    console.log( block[i].getBoundingClientRect().top + '--' + i)
     let count = 0.5;
 
     const animation = (elem, elemClass) => {
         let scroll = elem.getBoundingClientRect().top;
-        console.log(scroll);
+
         if(window.scrollY > scroll + 100) {     
             elem.classList.add(elemClass);
         } else {

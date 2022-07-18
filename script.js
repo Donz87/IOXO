@@ -11,9 +11,6 @@ import forms from "./actions/send.js";
 
 
 
-
-
-
   year();
   scrollBanner();
   logo();
@@ -22,7 +19,7 @@ import forms from "./actions/send.js";
   animSocIcon();
   modal();
   forms();
-  
+ 
   window.addEventListener('scroll', () => {
     hexagon();
     headerBG();

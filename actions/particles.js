@@ -1,5 +1,7 @@
 
 const particles = () => {
+  
+  
     particlesJS("particles-js", {
         particles: {
           number: { value: 10, density: { enable: false, value_area: 0 } },

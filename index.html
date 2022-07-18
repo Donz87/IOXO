@@ -14,34 +14,31 @@
 <body>
    <header >
         <div class="header--wrapper">
-            <div class="logo">
-      
+            <div class="logo">    
                     <span class="i"></span>
                     <span class="o-up"></span>
                     <span class="o-down"></span>
                     <span class="x"></span>
-             </div>
+            </div>
             <nav class="hor-nav">
-                <a href="">Home</a>
-                <a href="">Services</a>
-                <a href="">About</a>
-            </nav>
-           
-                <div class="hamburger" id="hamburger-1">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+            </nav>        
+            <div class="hamburger" id="hamburger-1">
                     <span class="line"></span>
                     <span class="line"></span>
                     <span class="line"></span>
-                </div>
-           
+            </div>          
         </div>
    </header>
    <div class="side-bar">
         <div class="side-bar--wrapper">
             <div class="side-bar--line"></div>
             <nav class="side-bar--nav">
-                <a href="">Home</a>
-                <a href="">Services</a>
-                <a href="">About</a>
+                <a href="./index.html">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
             </nav>
             <div class="side-bar--social">
                 <div class="social--items">
@@ -156,31 +153,26 @@
         </div>
    </div>
   <main>
-        <section class="section section--banner">
+        <section class="section section--banner" id="home">
             <div class="section--wrapper banner--wrapper">
                 <div class="section--content">
-                <h2> 
-                    Turn your ideas into reality with IOXO
-                 </h2>
-                <h1>
-                    RESULTS DRIVEN
-                    DEVELOPING BUSINESS CONCEPTS
-                </h1>
-                           
-     
-                <div class="button btn-four btn--modal ">Get Started
+                    <h2> 
+                        Turn your ideas into reality
+                     </h2>
+                    <h1>
+                        DEVELOPING BUSINESS CONCEPTS
+                    </h1>            
+                    <div class="button btn-four btn--modal ">Get Started
                     <span></span><span></span><span></span><span></span>
-                </div>
-             
-
-                <a href="#second" class="btn_scroll bt_arrow " >   
+                    </div>
+                    <a href="#second" class="btn_scroll bt_arrow " >   
                     <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
                         x="0px" y="0px" viewBox="0 0 200 100">
                         <polyline fill="none"  stroke-miterlimit="10" points="0,-1 100,99 200,-1 "/>
                     </svg>
-                </a>
-            </div>
-        </div>
+                    </a>
+               </div>
+            </div>      
         </section>
         <section class="section section--second" id="second">
             <div class="section--wrapper second--wrapper">
@@ -247,7 +239,48 @@
                 <div id="particles-js"></div> <!-- stats - count particles -->
               
             </div>
-        </section>       
+        </section> 
+        <section class="section section-third" id="services">
+            <div class="third--wrapper">
+                <div class="block--services">
+                    <h1>Services</h1>
+                </div>
+                <div class="service--content">
+               <div class="block-service">
+                 <div class="item--service">Website Audit Services</div>
+                 <div class="item--service">SEO Strategy</div>
+                 <div class="item--service">SEO Keyword Strategy</div>
+                 <div class="item--service">SEO Content Strategy</div>
+               </div>
+                    
+               <div class="block-service">
+                <div class="item--service">PPC Strategy</div>
+                <div class="item--service">SEM Strategy</div>
+                <div class="item--service">Social Media Strategy Services</div>
+                <div class="item--service">Reputation Management Strategy</div>                    
+               </div>
+
+               <div class="block-service">
+                <div class="item--service">Link Building Strategy</div>
+                <div class="item--service">eCommerce Marketing Plan</div>
+                <div class="item--service">Franchise Marketing Strategy</div>           
+               </div>              
+                </div>
+            </div>
+        </section> 
+        <section class="section about--section" id="about">
+            <div class="about--wrapper">
+                <div class="about--image">
+                    <img src="./assets/about.png" alt="about us">
+                </div>
+                <div class="about--content">
+                    <h1>About Us</h1>
+                    <p>
+                        IOXO  is an award-winning digital marketing company that offers a full spectrum of data-driven web marketing services. We develop growth-oriented online marketing campaigns that make a positive impact on businesses.
+                    </p>
+                </div>
+            </div>
+        </section>     
   </main>
   <footer>
     <div class="footer--wrapper">
@@ -267,20 +300,13 @@
         </div>
         <div class="footer--content">
             <div class="items">
-                <h3>Test 1</h3>
                 <ul>
-                    <li>test-test-test</li>
-                    <li>test-test-test</li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
                 </ul>
             </div>
             <div class="items">
-                <h3>Test 2</h3>
-                <ul>
-                    <li>test-test-test</li>
-                    <li>test-test-test</li>
-                </ul>
-            </div>
-            <div class="social">
                 <div class="logo">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="386.000000pt" height="388.000000pt" viewBox="0 0 386.000000 388.000000" preserveAspectRatio="xMidYMid meet">
 
@@ -292,11 +318,14 @@
                         </g>
                         </svg>
                 </div>
+            </div>
+            <div class="social">
+
                 <div class="social--items">
                     <a href="#!" class="social--item">
                         <svg  version="1.0" xmlns="http://www.w3.org/2000/svg" width="465.000000pt" height="500.000000pt" viewBox="0 0 465.000000 500.000000" preserveAspectRatio="xMidYMid meet">
                             <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)"
-                            fill="#fafafa" stroke="none">
+                            stroke="none">
                             <path d="M2245 4944 c-597 -322 -2137 -1172 -2155 -1190 l-25 -24 0 -1225 0
                             -1225 25 -24 c14 -13 511 -291 1105 -617 976 -536 1084 -593 1125 -593 41 0
                             149 57 1125 593 594 326 1091 604 1105 617 l25 24 0 1225 0 1225 -25 24 c-40
@@ -313,10 +342,9 @@
                             -28 145 3 170 80 6 18 85 389 176 823 91 435 179 851 195 925 17 75 30 162 30
                             194 0 50 -4 61 -29 87 -25 24 -37 29 -78 28 -26 0 -55 -3 -63 -6z"/>
                             </g>
-                        </svg>
-                        
+                        </svg>                      
                     </a>
-                    <a href="#!">
+                    <a href="#!" class="social--item">
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                          width="465.000000pt" height="500.000000pt" viewBox="0 0 465.000000 500.000000"
                          preserveAspectRatio="xMidYMid meet">                        
@@ -347,13 +375,13 @@
                         </g>
                         </svg>
                      </a>
-                    <a href="#!">
+                    <a href="#!" class="social--item">
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                          width="465.000000pt" height="500.000000pt" viewBox="0 0 465.000000 500.000000"
                          preserveAspectRatio="xMidYMid meet">
                         
                         <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)"
-                        fill="#fafafa" stroke="none">
+                         stroke="none">
                         <path d="M2245 4944 c-597 -322 -2137 -1172 -2155 -1190 l-25 -24 0 -1225 0
                         -1225 25 -24 c14 -13 511 -291 1105 -617 976 -536 1084 -593 1125 -593 41 0
                         149 57 1125 593 594 326 1091 604 1105 617 l25 24 0 1225 0 1225 -25 24 c-40
@@ -377,13 +405,13 @@
                         </g>
                         </svg>
                      </a>
-                    <a href="#!">
+                    <a href="#!" class="social--item">
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                          width="465.000000pt" height="500.000000pt" viewBox="0 0 465.000000 500.000000"
                          preserveAspectRatio="xMidYMid meet">
                         
                         <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)"
-                        fill="#fafafa" stroke="none">
+                         stroke="none">
                         <path d="M2245 4944 c-597 -322 -2137 -1172 -2155 -1190 l-25 -24 0 -1225 0
                         -1225 25 -24 c14 -13 511 -291 1105 -617 976 -536 1084 -593 1125 -593 41 0
                         149 57 1125 593 594 326 1091 604 1105 617 l25 24 0 1225 0 1225 -25 24 c-40
@@ -433,6 +461,97 @@
                 <span></span><span></span><span></span><span></span>
             </button>
         </form>
+        <div class="contact">
+            <div class="contact--wrapper">
+                <div>
+                    <h2>Contact Us</h2>
+                    <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 53.942 53.942">
+                        <path d="M53.364,40.908c-2.008-3.796-8.981-7.912-9.288-8.092c-0.896-0.51-1.831-0.78-2.706-0.78c-1.301,0-2.366,0.596-3.011,1.68  c-1.02,1.22-2.285,2.646-2.592,2.867c-2.376,1.612-4.236,1.429-6.294-0.629L17.987,24.467c-2.045-2.045-2.233-3.928-0.632-6.291  c0.224-0.309,1.65-1.575,2.87-2.596c0.778-0.463,1.312-1.151,1.546-1.995c0.311-1.123,0.082-2.444-0.652-3.731  c-0.173-0.296-4.291-7.27-8.085-9.277c-0.708-0.375-1.506-0.573-2.306-0.573c-1.318,0-2.558,0.514-3.49,1.445L4.7,3.986  c-4.014,4.013-5.467,8.562-4.321,13.52c0.956,4.132,3.742,8.529,8.282,13.068l14.705,14.705c5.746,5.746,11.224,8.66,16.282,8.66  c0,0,0,0,0.001,0c3.72,0,7.188-1.581,10.305-4.698l2.537-2.537C54.033,45.163,54.383,42.833,53.364,40.908z"/>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                    </svg>
+                    <span>1-00-00-00</span>
+                    </p>
+                    <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 400 400" >
+                        <g id="XMLID_1_">
+                            <polygon id="XMLID_869_" points="0,127.5 0,274.219 104.8,206.1  "/>
+                            <polygon id="XMLID_870_" points="400,274.219 400,127.5 295.2,206.1  "/>
+                            <polygon id="XMLID_871_" points="200,277.5 130.357,225.268 0,310 0,340 400,340 400,310 269.643,225.268  "/>
+                            <polygon id="XMLID_872_" points="0,90 200,240 400,90 400,60 0,60  "/>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                    </svg>
+                    <span>hello@ioxo.co</span>
+                    </p>
+            </div>
+            </div>
+            <div class="contact--wrapper">
+                <div>
+                    <h2>Mailing address</h2>
+                    <p>105 N 1ST ST.,#429</p>
+                    <p>San Jose, CA 95103 USA</p>
+                </div>
+            </div>
+        </div>
     </div>
    </div>
 

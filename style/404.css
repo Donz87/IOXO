@@ -1,0 +1,82 @@
+.err-404--wrapper {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+}
+
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+
+
+.err-404--header {
+    color: var(--color-primary);
+    font-size: 12.5rem;
+    letter-spacing: .10em;
+    margin: .025em 0;
+    text-shadow: .05em .05em 0 rgba(0, 0, 0, .25);
+    white-space: nowrap;
+}
+
+.err-404--header>span {
+    animation: spooky 2s alternate infinite linear;
+    color: var(--green);
+    display: inline-block;
+}
+
+.err-404--header svg {
+    width: max(80px, 15vw);
+}
+
+
+.err-404--subheader {
+    color: var(--color-primary);
+    margin-bottom: .40em;
+}
+
+.err-404--wrapper p {
+    color: var(--color-primary);
+    margin-top: 0;
+    text-align: center;
+}
+
+@keyframes spooky {
+    from {
+        transform: translatey(.15em) scaley(.95);
+    }
+
+    to {
+        transform: translatey(-.15em);
+    }
+}
+
+.btn--home {
+    text-align: center;
+}
+
+.btn--home span {
+    background-color: var(--green);
+}
+
+@media screen and (max-width: 720px) {
+    .err-404--header {
+        font-size: 30vw;
+        ;
+    }
+
+    .err-404--header svg {
+        width: 30vw;
+    }
+
+    .err-404--wrapper {
+        width: 90%;
+        margin: auto;
+    }
+}
