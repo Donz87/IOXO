@@ -65,7 +65,7 @@
     background-color: var(--green);
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
     .err-404--header {
         font-size: 30vw;
         ;
