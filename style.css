@@ -1027,13 +1027,20 @@ footer .social--items {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items:center;
-    margin-bottom: max(5px, .1vw);
+    margin-bottom: max(8px, 1vh);
     color: var(--color-tr);
     grid-gap:2%;
     font-size: max(.8rem, .8vmax);
 }
 .contact span {
     margin-left: max(5px, .1vw);
+}
+.e-mail {
+    display: grid;
+}
+.e-mail svg {
+    width:max(90px,5vmax);
+    fill: var(--color-tr);
 }
 
 form {
@@ -1160,6 +1167,9 @@ textarea:focus:-ms-input-placeholder {
     }
     .contact {
         margin: auto auto 5px auto;
+    }
+    .e-mail svg {
+        width:70px;
     }
     input[type=text],
     input[type=email],

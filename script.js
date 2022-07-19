@@ -8,6 +8,7 @@ import particles from "./actions/particles.js";
 import animSocIcon from "./actions/anim-soc-icon.js";
 import modal from "./actions/modal.js";
 import forms from "./actions/send.js";
+import {email} from "./actions/email.js";
 
 
 
@@ -19,7 +20,8 @@ import forms from "./actions/send.js";
   animSocIcon();
   modal();
   forms();
- 
+  email();
+  
   window.addEventListener('scroll', () => {
     hexagon();
     headerBG();
