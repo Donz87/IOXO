@@ -1018,19 +1018,28 @@ footer .social--items {
 .contact--wrapper {
     margin-top:max(25px, 2vh) ;
     padding:5%;
+    width: 100%;
 }
+.address--wrapper,
+.mail--wrapper {
+    display: grid;
+    justify-items: center;
+}
+
 .contact svg {
     width: max(.8rem, .8vmax);
     fill: var(--color-primary);
 }
-.contact p {
+.mail--wrapper p {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items:center;
-    margin-bottom: max(8px, 1vh);
-    color: var(--color-tr);
     grid-gap:2%;
+}
+.contact p {
     font-size: max(.8rem, .8vmax);
+    color: var(--color-tr);
+    margin-bottom: max(8px, 1vh);
 }
 .contact span {
     margin-left: max(5px, .1vw);
@@ -1170,6 +1179,12 @@ textarea:focus:-ms-input-placeholder {
     }
     .e-mail svg {
         width:70px;
+    }
+    .address--wrapper {
+        justify-items: end;
+    }
+    .mail--wrapper {
+        justify-items: start;
     }
     input[type=text],
     input[type=email],
